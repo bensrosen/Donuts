@@ -2,7 +2,54 @@
     font-family: 'Merienda';
     src: url('./FONTS/Merienda/Merienda-Bold.ttf');
   }  
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 header {
 background-color: purple;
@@ -54,6 +101,7 @@ background-position:center;
 
 form {
     font-size: 3em;
+    padding: 0.7em;
 }
 button{
     font-size: 80%;
@@ -64,9 +112,9 @@ button{
    font-size: 1em
 }
 
-form input{
+/*form input{
     font-size: 1.5em;
-}
+}*/
 
 form input, select {
 font-size: 1em;
@@ -102,11 +150,10 @@ font-size: 1em;
 .donut-menu li{
     display:flex ;
     align-items: center;
-    border: 1px solid red;
+    
 }
-.donut-menu li *{
-    border: 1px solid red;
-} 
+
+ 
 .donut-quantity{
     width: 1.7em;
 }
@@ -119,10 +166,16 @@ font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
+   }
 
-     
-
+.name-label, .phone {
+    width: 400px!important;
+    max-width: 100%;
 }
+
+
+
+
 
 #total p{
     display:inline-block;
@@ -141,10 +194,10 @@ font-size: 1em;
     
    }
 
-.submit {
+.submit-button {
     display: flex;
-    flex-direction: row;
-    text-align: right;
+    align-items: center;
+    justify-content: center;
 }
    
 .Add-More-Donuts:hover{
@@ -152,12 +205,23 @@ font-size: 1em;
 
 }
 
-*{border: 2px solid red;
+.heading,.heading2 {
+    border: 2px solid red;
+}
 
 @media only screen and (max-width:750px) {
     .donut-menu li{
         flex-direction: column;
 }
+#Total-Price{
+    
+    min-width: 100px; 
+   
+        display: inline-block;}
+
+
+
+
 .donut-menu img, .donut-name{
     max-width: 90%;
     margin: 0 auto;
@@ -167,11 +231,33 @@ font-size: 1em;
 }
 .Add-More-Donuts{
     font-size: 2em;
-    line-height: 3.0;
+    line-height: 1.0;
+}
+.heading{
+    font-size: 1em;
+    word-wrap: normal;
+    text-align: center;
 }
 
+
+.nav-links{
+    display:block;
+    float: none;
+    text-align: center;
+    border:3px solid red;
+    margin:0% auto;
+width:90%;
+}
+
+form{
+    font-size: 2em;
+}
+form input, select {
+    font-size: 0.8em;
+    }
+
+
 }
 
 
 
-}
